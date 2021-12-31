@@ -6,7 +6,7 @@
 
         <script>
             async function getFibonacciValueFromBackend(position) {
-                const response = await fetch('http://localhost:12345/calculate/' + position.toString());
+                const response = await fetch('http://localhost:8080/calculate/' + position.toString());
                 return response.json();
             }
 
